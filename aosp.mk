@@ -1,5 +1,5 @@
 ## Specify phone tech before including full_phone	
-$(call inherit-product, vendor/cm/config/telephony.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := gtel3g
@@ -12,7 +12,7 @@ $(call inherit-product, $(LOCAL_PATH)/gtel3g.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gtel3g
-PRODUCT_NAME := lineage_gtel3g
+PRODUCT_NAME := aosp_gtel3g
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T561
 PRODUCT_MANUFACTURER := samsung
