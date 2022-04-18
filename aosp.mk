@@ -4,9 +4,6 @@ $(call inherit-product, vendor/aosp/common.mk)
 # Release name
 PRODUCT_RELEASE_NAME := gtel3g
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/gtel3g.mk)
 
