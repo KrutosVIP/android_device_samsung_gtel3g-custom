@@ -17,6 +17,12 @@ LOCAL_PATH := device/samsung/gtel3g
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
 # Inherit from vendor tree
 $(call inherit-product-if-exists, vendor/samsung/gtel3g/gtel3g-vendor.mk)
 
